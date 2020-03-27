@@ -3,22 +3,21 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "yarn color-less && ng s -o",
-    "build": "yarn color-less && node --max_old_space_size=5120 ./node_modules/@angular/cli/bin/ng build --prod",
+    "generate": "yarn color-less && ng s -o",
+    "start": "ng serve -c=hmr",
+    "build": "node --max_old_space_size=5120 ./node_modules/@angular/cli/bin/ng build --prod --build-optimizer",
     "deploy": "gh-pages -d dist",
-    "analyse": "yarn build --stats-json",
     "test": "ng test",
     "lint": "yarn lint:ts && yarn lint:style",
     "e2e": "ng e2e",
-    "analyze": "yarn color-less && node --max_old_space_size=5120 ./node_modules/@angular/cli/bin/ng build --prod --stats-json",
+    "analyze": "node --max_old_space_size=5120 ./node_modules/@angular/cli/bin/ng build --prod --build-optimizer --stats-json",
     "test-coverage": "ng test --code-coverage --watch=false",
     "color-less": "node scripts/color-less.js",
     "icon": "ng g ng-alain:plugin icon",
     "lint:ts": "tslint -c tslint.json \"src/**/*.ts\" --fix",
     "lint:style": "stylelint \"src/**/*.less\" --syntax less --fix",
     "lint-staged": "lint-staged",
-    "tslint-check": "tslint-config-prettier-check ./tslint.json",
-    "hmr": "ng serve -c=hmr"
+    "tslint-check": "tslint-config-prettier-check ./tslint.json"
   },
   "private": true,
   "dependencies": {
