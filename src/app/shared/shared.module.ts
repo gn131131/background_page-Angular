@@ -1,11 +1,3 @@
-/*
- * @Description:
- * @Version: 1.0
- * @Autor: Pumpking
- * @Date: 2020-03-27 17:32:58
- * @LastEditors: Pumpking
- * @LastEditTime: 2020-03-30 17:12:10
- */
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
@@ -16,6 +8,8 @@ import { DelonABCModule } from '@delon/abc';
 import { DelonChartModule } from '@delon/chart';
 import { DelonACLModule } from '@delon/acl';
 import { DelonFormModule } from '@delon/form';
+// i18n
+import { TranslateModule } from '@ngx-translate/core';
 
 // #region third libs
 import { NgZorroAntdModule } from 'ng-zorro-antd';
@@ -60,6 +54,8 @@ const DIRECTIVES = [];
     DelonChartModule,
     DelonACLModule,
     DelonFormModule,
+    // i18n
+    TranslateModule,
     // third libs
     ...THIRDMODULES,
     // your components
