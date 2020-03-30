@@ -38,6 +38,8 @@
     "@delon/mock": "^8.9.0",
     "@delon/theme": "^8.9.0",
     "@delon/util": "^8.9.0",
+    "@ngx-translate/core": "^12.1.2",
+    "@ngx-translate/http-loader": "^4.0.0",
     "ajv": "^6.10.2",
     "ng-alain": "^8.9.0",
     "ng-zorro-antd": "^8.5.2",

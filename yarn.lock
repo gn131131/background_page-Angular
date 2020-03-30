@@ -1034,6 +1034,18 @@
     tree-kill "1.2.1"
     webpack-sources "1.4.3"
 
+"@ngx-translate/core@^12.1.2":
+  version "12.1.2"
+  resolved "https://registry.npm.taobao.org/@ngx-translate/core/download/@ngx-translate/core-12.1.2.tgz#0c6f24249953a79cfc2d581b2cd1b5d6d338d9db"
+  integrity sha1-DG8kJJlTp5z8LVgbLNG11tM42ds=
+
+"@ngx-translate/http-loader@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.npm.taobao.org/@ngx-translate/http-loader/download/@ngx-translate/http-loader-4.0.0.tgz#8a555248ad4b7d513460fcec9da25b0447962f1d"
+  integrity sha1-ilVSSK1LfVE0YPzsnaJbBEeWLx0=
+  dependencies:
+    tslib "^1.9.0"
+
 "@nodelib/fs.stat@^1.1.2":
   version "1.1.3"
   resolved "https://registry.npm.taobao.org/@nodelib/fs.stat/download/@nodelib/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
