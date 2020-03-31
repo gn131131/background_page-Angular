@@ -1,3 +1,9 @@
+
+# backgroung_page-Angular
+##### Angular+ng-alain后台管理移植（基于ng-zorro）
+##### 首页域名：www.pumpking.xyz
+##### 域名：angular.pumpking.xyz
+
 <p align="center">
   <a href="https://ng-alain.com">
     <img width="100" src="https://ng-alain.com/assets/img/logo-color.svg">
