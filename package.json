@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "generate": "yarn color-less && ng s -o",
-    "start": "yarn color-less && ng serve -c=hmr",
+    "start": "yarn color-less && ng serve --port 4300 -c=hmr",
     "build": "yarn color-less && node --max_old_space_size=5120 ./node_modules/@angular/cli/bin/ng build --prod --build-optimizer",
     "deploy": "gh-pages -d dist",    
     "analyze": "node --max_old_space_size=5120 ./node_modules/@angular/cli/bin/ng build --prod --build-optimizer --stats-json",
