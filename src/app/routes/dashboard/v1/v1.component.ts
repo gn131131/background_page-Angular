@@ -1,3 +1,11 @@
+/*
+ * @Description:
+ * @Version: 1.0
+ * @Autor: Pumpking
+ * @Date: 2020-03-30 15:47:54
+ * @LastEditors: Pumpking
+ * @LastEditTime: 2020-03-31 11:36:13
+ */
 import { Component, OnInit, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
 import { _HttpClient } from '@delon/theme';
 
@@ -53,11 +61,11 @@ export class DashboardV1Component implements OnInit {
   constructor(private http: _HttpClient, private cdr: ChangeDetectorRef) {}
 
   ngOnInit() {
-    this.http.get('/chart').subscribe((res: any) => {
-      this.webSite = res.visitData.slice(0, 10);
-      this.salesData = res.salesData;
-      this.offlineChartData = res.offlineChartData;
-      this.cdr.detectChanges();
-    });
+    // this.http.get('/chart').subscribe((res: any) => {
+    //   this.webSite = res.visitData.slice(0, 10);
+    //   this.salesData = res.salesData;
+    //   this.offlineChartData = res.offlineChartData;
+    //   this.cdr.detectChanges();
+    // });
   }
 }
