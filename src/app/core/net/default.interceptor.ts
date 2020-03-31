@@ -92,8 +92,9 @@ export class DefaultInterceptor implements HttpInterceptor {
         (this.injector.get(DA_SERVICE_TOKEN) as ITokenService).clear();
         this.goTo('/passport/login');
         break;
-      case 403:
       case 404:
+        break;
+      case 403:
       case 500:
         this.goTo(`/exception/${ev.status}`);
         break;
