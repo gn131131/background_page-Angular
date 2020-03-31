@@ -1,3 +1,11 @@
+/*
+ * @Description:
+ * @Version: 1.0
+ * @Autor: Pumpking
+ * @Date: 2020-03-30 15:47:56
+ * @LastEditors: Pumpking
+ * @LastEditTime: 2020-03-31 00:10:14
+ */
 import { Component, OnInit } from '@angular/core';
 import { ZipService } from '@delon/abc';
 import * as JSZip from 'jszip';
@@ -21,7 +29,7 @@ export class ZipComponent {
   // region: write
 
   instance: JSZip | null = null;
-  data: { path: string; url: string }[] = [
+  data: { path?: string; url?: string }[] = [
     { path: 'demo.docx', url: 'https://ng-alain.com/assets/demo.docx' },
     {
       path: '小程序标志.zip',
