@@ -16,12 +16,13 @@ const LANG = {
   delon: delonLang,
 };
 // register angular
-import { registerLocaleData } from '@angular/common';
+import { registerLocaleData, LocationStrategy, PathLocationStrategy } from '@angular/common';
 registerLocaleData(LANG.ng, LANG.abbr);
 const LANG_PROVIDES = [
   { provide: LOCALE_ID, useValue: LANG.abbr },
   { provide: NZ_I18N, useValue: LANG.zorro },
   { provide: DELON_LOCALE, useValue: LANG.delon },
+  { provide: LocationStrategy, useClass: PathLocationStrategy },
 ];
 // #endregion
 
