@@ -97,7 +97,7 @@
     "tslint-language-service": "^0.9.9",
     "typescript": "~3.5.3",
     "webpack-bundle-analyzer": "^3.6.1",
-    "xlsx": "^0.15.1"
+    "xlsx": "^0.17.0"
   },
   "lint-staged": {
     "linters": {
